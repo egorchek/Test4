@@ -1,0 +1,280 @@
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS16h9lv46IvYpyRbN1vMMODuGfRENI9rpaw&usqp=CAU);
+}
+*{
+    margin:0;
+    padding:0;
+}
+.Header{
+    display: flex; /*Сперва display */
+flex-wrap: wrap;/*Затем Характеристика */
+margin: auto; /* Потом margin */
+width: 100%;/* Остальное */
+height:600px;
+}
+.Head-Text{
+    padding:15px;
+    font-size:28px;
+}
+
+
+.image-part{
+    background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-03/thumbs/1614796586_160-p-fon-dlya-menyu-restorana-225.png);
+width:100%;
+height:600px;
+background-repeat:no-repeat;
+background-size:cover;
+
+}
+
+.Header-Name{
+   font-size: 32px;
+   text-align:center;
+   padding-left:90px;
+   padding-top: 50px; 
+   left:0;
+   position:relative;
+   animation-name: Header-Name;
+   animation-duration: 2s;
+   Animation-timing-function: ease-out;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+color:white;
+opacity:0;
+}
+
+
+
+.Description{
+    font-size:24px;
+    text-align:center;
+   padding-left:90px;
+    padding-bottom:50px;
+    top:0;
+    position:relative;
+    animation-name: Desc;
+    animation-duration: 2s;
+    Animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    color:white;
+    opacity:0;
+    
+}
+
+
+
+
+.Info{
+    padding-top:40px; 
+    font-size: 18px;
+    text-align:left;
+   padding-left:90px;
+    left:0;
+    position:relative;
+animation: Info 1s linear 1 forwards;    
+}
+
+@keyframes Header-Name {
+    0%{
+        color: #11ffee00;
+    left:-100px;
+    }
+    30%{
+        opacity:0;
+    }
+    100%{
+    left:0;
+    opacity:1;
+    }
+    }
+
+    @keyframes Desc {
+        0%{
+            color: #11ffee00;
+        top:-100px;
+        }
+
+        30%{
+            opacity:0;
+        }
+        100%{
+        top:0;
+        opacity:1;
+        }
+        }
+
+       
+
+
+            .space{
+                height:100px;
+            }
+.Main-info{
+    display:flex;
+    flex-flow: row wrap;
+}
+           
+.Info-Table{
+    display:flex;
+    flex-wrap:wrap;
+    margin:auto; 
+    width:95%;
+    /*height:400px; NO*/ 
+     
+}
+
+
+.Table-Text{
+   /* width: 45%;
+    height:300px; No */
+    min-height:350px; /* Yes*/ 
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    margin:auto;
+    font-size: 24px;
+    padding: 10px;
+    position:relative;
+    left:0;
+    animation: Table-Text 3s ease-out 1 0.5s forwards;
+    opacity:0;
+    /*flex-flow:row wrap; No*/
+
+}
+
+
+
+.Table-Image{
+/*width: 45%; No*/
+display:flex;
+margin:auto;
+flex-flow:row wrap;
+height:300px;
+
+
+
+}
+.Image{
+   /* width:100%; NO */
+   min-width:350px;
+   max-width: 370px; /* Фиксирую максимальную ширину картинки! */
+    height:auto;
+ position:relative;
+ left:0;
+    animation: Image 3s ease-out 1 0.5s forwards;
+    opacity:0;
+    
+}
+@keyframes  Table-Text{
+    0%{
+color: #11ffee00;
+left:-100px;
+}
+50%{
+    color: #11ffee00;
+    opacity:1;
+left:-100px;
+}
+
+100%{
+        
+        color: black;
+    opacity:1;
+    left:0;
+    }
+}
+
+
+
+@keyframes Image{
+    0%{
+        Opacity:0;
+left: 100px;
+    }
+    100%{
+       opacity:1;
+    left:0;
+    }
+}
+
+.End{
+    
+    display:Flex;
+    flex-wrap:wrap;
+    align-items: flex-start;
+    margin-top:20px;
+    width:100%;
+    /*height: 300px; NO */
+    background-color: #45464C;
+    
+}
+.End-Text{
+    width:300px;
+   /* height:300px; No*/
+    color:white;
+    font-size:20px;
+    margin:auto;
+    margin-left:20px;
+    margin-top:50px;
+    animation: End-Text 3s ease-out 1 0.5s forwards;
+opacity:0;
+}
+.End-Text2{
+    width:300px;
+   /* height:300px; No*/
+    color:white;
+    font-size:20px;
+    margin:auto;
+    margin-left:20px;
+    margin-top:50px;
+    opacity:0;
+    animation: End-Text 3s ease-out 1 0.8s forwards;
+}
+.End-Button{
+   /* width:40%;
+    height:300px; */
+    display:flex;
+}
+.Button{
+    width: 200px; /*Фиксируй размер у кнопок! */
+    height:100px;
+    position:relative;
+    top:0;
+    margin:auto;
+    margin-top:50px;
+    border-radius: 10%;
+    background: linear-gradient(45deg, #d85110, #c45824, #dd7645);
+    color:white;
+    box-shadow: 0 5px 0 #b45e34;
+    transition: 1s;
+    background-size: 200% auto;
+    font-size:18px;
+}
+.Button:hover{
+top:2px;
+box-shadow: 0 3px 0 #dd7645;
+background-position: right center;
+}
+
+
+@keyframes End-Text{
+    0%{
+        
+        opacity:0;
+    }
+    50%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    
+    }
+}
+
+
+@media only screen and(max-width:500px){
+    .Image{
+        max-width:350px;
+    }
+}
